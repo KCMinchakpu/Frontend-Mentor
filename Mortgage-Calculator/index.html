@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv=“X-UA-Compatible” content=“ie=edge”>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Mortgage Repayment Calculator</title>
+</head>
+<body>
+    <h1>Mortgage Repayment Calculator</h1>
+    <section class="canvas">
+        <div class="wrapper">
+            <div class="box-input">
+                <div class="calculator">
+                    <h3>Mortgage Calculator</h3> <button type="reset">Clear All</button>
+                    <form id="mortgageForm">
+                         <div class="form-group">
+                             <label for="mortgageAmount">Mortgage Amount:</label>
+                             <input type="number" id="mortgageAmount" name="mortgageAmount" required>
+                             <small class="error-message"></small>
+                         </div>
+                         <div class="form-group">
+                            <label for="mortgageTerm">Mortgage Term (years):</label><br>
+                            <input type="number" id="mortgageTerm" name="mortgageTerm" required>
+                            <small class="error-message"></small>
+
+                            <label for="interestRate">Interest Rate (%):</label><br>
+                             <input type="number" id="interestRate" name="interestRate" required>
+                             <small class="error-message"></small>
+                        </div>
+                            <div class="form-group">
+                             <label>Mortgage Type:</label>
+                             <input type="radio" id="interestOnly" name="mortgageType" value="interestOnly">
+                             <label for="interestOnly">Interest Only</label>
+                             <input type="radio" id="repayment" name="mortgageType" value="repayment" checked>
+                             <label for="repayment">Repayment</label>
+                         </div>
+                         <button type="submit">Calculate</button>
+                         
+                     </form>
+            </div>
+            </div>
+            <div class="box-result">
+                <img src="/Mortgage-Calculator/images/illustration-empty.svg">
+                <div class="results">
+                    <h4>Results shown here</h4>
+                    <p>Monthly Repayment: <span id="monthlyRepayment"></span></p>
+                    <p>Total Repayment: <span id="totalRepayment"></span></p>
+                </div>
+            
+            </div>
+    </section>
+    
+    
+        
+    <script src="script.js"></script>
+</body>
+</html>
