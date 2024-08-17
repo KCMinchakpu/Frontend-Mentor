@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #faf8f8;
+    background-size: cover;
+    font: 14px/20px "Lato", Arial, sans-serif;
+    color: #5a5858;
+    margin-top: 30px;
+  }
+
+  .canvas {
+    background-color: #0b799b;
+    padding: 50px;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    
+  }
+
+  img {
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  h2 {
+    line-height: 1.1;
+  }
+
+  p {
+    font-size: 15px;
+  }
