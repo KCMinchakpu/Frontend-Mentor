@@ -1,6 +1,6 @@
-![](./screenshot.jpg)
+![](./banner.png)
 
-# Frontend Mentor - My personal DashBoard
+# Frontend Mentor - My DashBoard
 
 These are solutions to my Challenges on Frontend Mentor](https://www.frontendmentor.io/challenges. Frontend Mentor challenges help New and Seasoned developers improve their coding skills by building realistic projects. 
 
