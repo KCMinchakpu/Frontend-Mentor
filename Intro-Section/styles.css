@@ -11,17 +11,21 @@
     color: #5a5858;
   }
 
-.logo {
- padding: 10px;
- margin-left: 50px;
+  header {
+    padding-top: 20px;
+  }
 
-}
+  .logo {
+    padding-top: 20px;
+    padding-left: 50px;
+  }
 
 .topnav {
   background-color: #faf8f8;
   overflow: hidden;
   float: right;
-  margin-right: 800px;
+  margin-right: 700px;
+  margin-top: 5px;
 }
 
 .topnav a {
@@ -125,7 +129,7 @@
 
 .right {
   float: inline-end;
-  margin-top: -20px;
+  margin-top: -45px;
 }
 
 .right a {
@@ -137,7 +141,119 @@
 }
 
 .register {
-  border: 1px solid #333;
+  border: 1px solid gray;
   border-radius: 8px;
   margin-right: 50px;
+}
+
+.wrapper {
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+ 
+}
+
+.hero-img {
+  align-items: center;
+  width: 480px;
+  height: 640px;
+  float: inline-end;
+  margin-right: 100px;
+ }
+
+ h1 {
+  font-size: 50px;
+  line-height: 1.0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  padding-left: 100px;
+  margin-top: 150px;
+  
+}
+
+h3 {
+  float: left;
+  padding-left: 100px;
+  margin-bottom: 50px;
+}
+
+.hero-btn {
+  background-color: hsl(0, 0%, 8%);
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 200px;
+  margin-left: 100px;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-btn:hover {
+  background-color: red;
+}
+
+.client {
+  margin-top: 150px;
+  margin-left: 50px;
+  padding-left: 50px;
+  
+}
+
+.client img {
+  padding-right: 30px;
+}
+
+.hero:nth-of-type(1) {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.hero:nth-of-type(2) {
+  grid-column: 1 / 2;
+  grid-row: 1;
+}
+
+@media (max-width: 500px) {
+  .container {
+    grid-template-columns: 1fr;
+    width: 320px;
+    margin: 5px;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr;
+    width: 380px;
+    margin: 10px;
+    
+  }
+
+  h1, h3, .client  {
+   justify-items: center;
+   margin-left: 5px;
+   padding-left: 0px;
+
+  }
+  .hero-btn {
+    margin-left: 40px;
+    justify-items: center;
+    
+  }
+
+  .hero-img {
+    width: 380px;
+    height:640;
+  }
+
+  h1 {
+    font-size: 27px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+   
+    
+  }
 }
