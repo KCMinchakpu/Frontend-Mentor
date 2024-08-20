@@ -1,15 +1,17 @@
-@import url(https://fonts.googleapis.com/css?family=Kumbh+Sans:400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
 
 *, *:before, *:after {
     box-sizing: border-box;
   }
   
   body {
-    background: #faf8f8;
-    background-size: cover;
-    font: 14px/20px "Lato", Arial, sans-serif;
-    color: #5a5858;
-    margin-top: 30px;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .canvas {
@@ -18,47 +20,44 @@
     font-family: "Lexend Deca", sans-serif;
     font-weight: 400;
     font-style: normal;
-    display: grid;
-    place-items: center;
-    margin: 30px;
-    
-  }
-
-  h1 {
-    text-align: center;
   }
 
   .card-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 1200px;
-    width: 750px;
-    height: 400px;
+    display: flex;
     padding: 20px;
+    
 }
 
 .card {
+    background-color: #fff;
     background-color: hsl(31, 77%, 52%);
     border-top-right-radius: none;
     border-bottom-right-radius: none;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     padding: 40px;
-    position: relative;
+    width: 270px;
+    height: 400px;
+    
 }
 
 .card-2 {
     background-color: hsl(184, 100%, 22%);
     border-top-right-radius: none;
     border-bottom-right-radius: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     padding: 40px;
-    position: relative;
+    width: 270px;
+    height: 400px;
 }
 
 .card-3 {
@@ -67,43 +66,49 @@
     border-bottom-left-radius: none;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     padding: 40px;
-    position: relative;
+    width: 270px;
+    height: 400px;
 }
-
 .card-header {
-    display: grid;
-    grid-template-columns: auto 1fr;
+    display: flex;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
+    width: 100%;
 }
 
 .card-image {
     object-fit: cover;
 }
-
+    
 .card-title {
     margin: 0;
     font-size: 18px;
     color: #fff;
-    font-family: "Big Shoulders Display", sans-serif;
+    font-family: "Lexend Deca", sans-serif;
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 600;
     font-style: normal;
-   }
+    margin-top: 20px;
+}
 
-.card-text {
+.card-content {
+
     font-size: 12px;
     color: #d8d6d6;
     margin: 0;
     padding-bottom: 20px;
+    margin: 20px 0;
+    flex-grow: 1;
+    
 }
 
 .card-button {
+    align-self: flex-start;
     background-color: #fff;
     color: hsl(31, 77%, 52%);
     border: none;
@@ -111,11 +116,11 @@
     border-radius: 25px;
     cursor: pointer;
     text-align: center;
-    justify-self: start;
     width: 130px;
 }
 
 .card-button-2 {
+    align-self: flex-start;
     background-color: #fff;
     color: hsl(184, 100%, 22%);
     border: none;
@@ -123,11 +128,11 @@
     border-radius: 25px;
     cursor: pointer;
     text-align: center;
-    justify-self: start;
     width: 130px;
 }
 
 .card-button-3 {
+    align-self: flex-start;
     background-color: #fff;
     color: hsl(179, 100%, 13%);
     border: none;
@@ -135,7 +140,6 @@
     border-radius: 25px;
     cursor: pointer;
     text-align: center;
-    justify-self: start;
     width: 130px;
 }
 
@@ -146,106 +150,27 @@
 } 
 
 
-
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .card-container {
-        width: 100%;
-        display: flex;
         flex-direction: column;
-        margin-top: 10px;
-        
-       }
+    }
+
+    .card, .card-2, .card-3 {
+        height: 600px;
+        width: 250px;
+    }
 
     .card {
-        border-top-right-radius: none;
+        border-top-right-radius: 8px;
         border-bottom-right-radius: none;
-        border-top-left-radius: none;
+        border-top-left-radius: 8px;
         border-bottom-left-radius: none;
-        padding: 30px;
-       
     }
-    
-    .card-2 {
-        border-top-right-radius: none;
-        border-bottom-right-radius: none;
-        padding: 30px;
-    }
-    
+
     .card-3 {
         border-top-left-radius: none;
-        border-bottom-left-radius: none;
+        border-bottom-left-radius: 8px;
         border-top-right-radius: none;
-        border-bottom-right-radius: none;
-        padding: 30px;
-     }
-
-    .canvas {
-        background-color: #f1f1f1;
-        padding: 10px;
-        font-family: "Lexend Deca", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        display: flex;
-        height: 1200px;
-         
-      }
-
-      .card-title {
-        margin: 0;
-        font-size: 17px;
-        color: #fff;
-        font-family: "Big Shoulders Display", sans-serif;
-        font-weight: 500;
-        font-style: normal;
-       }
-    
-    .card-text {
-        font-size: 10px;
-        color: #d8d6d6;
-        margin: 0;
-        padding-bottom: 20px;
+        border-bottom-right-radius: 8px;
     }
-
-    .card-button {
-        background-color: #fff;
-        color: hsl(31, 77%, 52%);
-        border: none;
-        padding: 10px 15px;
-        border-radius: 25px;
-        cursor: pointer;
-        text-align: center;
-        justify-self: start;
-        width: 130px;
-    }
-    
-    .card-button-2 {
-        background-color: #fff;
-        color: hsl(184, 100%, 22%);
-        border: none;
-        padding: 10px 15px;
-        border-radius: 25px;
-        cursor: pointer;
-        text-align: center;
-        justify-self: start;
-        width: 100px;
-    }
-    
-    .card-button-3 {
-        background-color: #fff;
-        color: hsl(179, 100%, 13%);
-        border: none;
-        padding: 10px 15px;
-        border-radius: 25px;
-        cursor: pointer;
-        text-align: center;
-        justify-self: start;
-        width: 100px;
-    }
-
-    h1 {
-        text-align: center;
-        line-height: 1.5;
-        font-size: 20px;
-      }
 }
-
