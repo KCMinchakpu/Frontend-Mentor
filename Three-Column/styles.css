@@ -153,34 +153,31 @@
         display: flex;
         flex-direction: column;
         margin-top: 10px;
-
+        
        }
 
     .card {
-        border-top-right-radius: 8px;
+        border-top-right-radius: none;
         border-bottom-right-radius: none;
-        border-top-left-radius: 8px;
+        border-top-left-radius: none;
         border-bottom-left-radius: none;
         padding: 30px;
        
     }
     
     .card-2 {
-        
         border-top-right-radius: none;
         border-bottom-right-radius: none;
         padding: 30px;
     }
     
     .card-3 {
-       
         border-top-left-radius: none;
-        border-bottom-left-radius: 8px;
+        border-bottom-left-radius: none;
         border-top-right-radius: none;
-        border-bottom-right-radius: 8px;
+        border-bottom-right-radius: none;
         padding: 30px;
-        
-    }
+     }
 
     .canvas {
         background-color: #f1f1f1;
