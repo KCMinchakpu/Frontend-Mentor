@@ -67,7 +67,7 @@ By participating in Frontend Mentor challenges, I gained valuable experience, im
 ## Author
 
 - Website - [Kevin Cross Minchakpu](https://www.)
-- Frontend Mentor - [@yKCMinchakpu](https://www.frontendmentor.io/profile/KCMinchakpu)
+- Frontend Mentor - [@KCMinchakpu](https://www.frontendmentor.io/profile/KCMinchakpu)
 - LinkedIn - [@kevinomics](https://www.linkedin.com/in/kevin-cross-minchakpu-7897379a/)
 
 
