@@ -148,6 +148,10 @@ html {
     .container {
         min-height: 100vh;
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
         background-position: left bottom;
         background-size: auto;
     }
@@ -187,4 +191,46 @@ html {
     }
 
     
+}
+
+@media screen and (max-width: 480px) {
+
+    .container {
+        min-height: 100vh;
+        width: 315px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        background-image: url(images/pattern-curve.svg);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: contain;
+    }
+
+    .slide-image {
+        width: 270px;
+        margin: 0 auto;
+        height: 100%;
+        padding: 10px;
+        background-image: url(images/pattern-bg.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .testimonial-text {
+        font-size: 0.6rem;
+        line-height: .9rem;
+        margin: 0 10px;
+    }
+
+    .developer-text, .developer-text-span {
+        font-size: 0.4rem;
+        margin-bottom: 50px;
+    }
+
+    .slide-image img {
+        max-width: 200px;
+    }
 }
