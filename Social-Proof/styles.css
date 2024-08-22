@@ -8,6 +8,7 @@ body {
     background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
     background-repeat: no-repeat;
     background-position: 0vw ovh, 30vw 10vh;
+    height: 100%;
 }
 
 .container {
@@ -38,6 +39,10 @@ body {
     line-height: 25px;
     width: 75%;
     padding-top: 32px;
+}
+
+#rating-cards {
+    margin-bottom: 50px;
 }
 
 .ratings {
