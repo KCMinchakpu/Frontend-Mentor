@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Interactive Rating Component</title>
+</head>
+<body>
+    <main>
+        <div info-js-wrapper>
+        <img src="images/icon-star.svg" alt="Icon Star" width="16" height="16" class="logo">
+
+        <h1>How did we do? </h1>
+        
+        <p>
+            Please let us know how we did with your support request.
+            All feedback is appreciated to help us improve our offering!
+        </p>
+        
+        <form info-js-form>
+            <div class="rating-group">
+            <label class="radio-input">
+                <input type="radio" name="rating" value="1" class="sr-only">
+                <span class="control">1 <span class="sr-only"> Star</span></span>
+            </label>
+
+            <label class="radio-input">
+                <input type="radio" name="rating" value="2" class="sr-only">
+                <span class="control">2<span class="sr-only"> Stars</span></span>
+            </label>
+
+            <label class="radio-input">
+                <input type="radio" name="rating" value="3" class="sr-only">
+                <span class="control">3<span class="sr-only"> Stars</span></span>
+            </label>
+
+            <label class="radio-input">
+                <input type="radio" name="rating" value="4" class="sr-only">
+                <span class="control">4<span class="sr-only"> Stars</span></span>
+            </label>
+
+            <label class="radio-input">
+                <input type="radio" name="rating" value="5" class="sr-only">
+                <span class="control">5<span class="sr-only"> Stars</span></span>
+            </label>
+        </div>
+             
+            <button type="submit" class="button">Submit</button>
+        </form>
+    </div>
+    </main>
+
+    <template info-js-template>
+        <img src="images/illustration-thank-you.svg" alt="Thank you Illustration" width="162" height="108" class="illustration">
+        
+        <p class="rating-output">You selected {{rating}} out of 5 </p>
+        
+        <h1 class="text-center">Thank you!</h1>
+
+        <p class="text-center">
+            We appreciate you taking the time to give a rating.
+            If you ever need more support, don’t hesitate to get in touch!
+        </p>
+    </template>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

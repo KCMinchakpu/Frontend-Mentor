@@ -1,0 +1,239 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+body,
+h1,
+p
+ {
+  margin: unset;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Overpass", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 15px;
+  background-color: #121417;
+  display: grid;
+  place-items: center;
+  min-block-size: 100vh;
+
+}
+
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+h1 {
+    color: #fff;
+    font-size: 28px;
+    font-family: "Overpass", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 35px;
+    margin-bottom: 7px;
+}
+    
+
+
+p {
+    color: #959eac;
+    line-height: 24px;
+    
+}
+
+
+main {
+    background: linear-gradient(to bottom, hsl(215, 20%, 17%), hsl(215, 24%, 12%));
+    max-width: 412px;
+    width: 100%;
+    border-radius: 30px;
+    padding: 32px;
+}
+
+.logo {
+    background-color: #252d37;
+    width: 48px;
+    height: 48px;
+    padding: 16px;
+    border-radius: 48px;
+    margin-bottom: 30px;
+}
+
+.button {
+    background-color: #fb7413;
+    border: 0;
+    color: #fff;
+    text-transform: uppercase;
+    height: 45px;
+    border-radius: 45px;
+    width: 100%;
+    cursor: pointer;
+    appearance: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.button:is(:hover, :focus-visible) {
+    background-color: #fff;
+    color: #fb7413;
+    transition: background-color 0.15s linear, color 0.15s linear;
+    outline: none;
+}
+
+.rating-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    margin-bottom: 32px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.radio-input .control {
+    display: block;
+    background-color: #252d37;
+    color: #959eac;
+    width: 51px;
+    height: 51px;
+    border-radius: 51px;
+    text-align: center;
+    line-height: 51px;
+    cursor: pointer;
+}
+
+.radio-input input:checked + .control {
+    background-color: #959eac;
+    color: #fff;
+}
+
+.radio-input:hover .control,
+.radio-input input:focus + .control {
+    background-color: #fb7413;
+    color: #fff;
+    transition: background-color 0.15s linear, color 0.15s linear;
+}
+
+.rating-output {
+    background-color: #252d37;
+    color: #fb7413;
+    height: 32px;
+    border-radius: 32px;
+    line-height: 32px;
+    width: max-content;
+    margin-inline: auto;
+    padding-inline: 20px;
+}
+
+.illustration {
+    margin-inline: auto;
+    margin-bottom: 42px;
+    
+}
+
+.animate-out {
+  animation: animate-out 0.15s ease-out both;
+}
+
+.animate-in {
+  animation: animate-in 0.15s ease-out both;
+}
+
+@keyframes animate-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    translate: -3rem;
+  }
+}
+
+@keyframes animate-in {
+  from {
+    opacity: 0;
+    translate: 3rem;
+  }
+
+  to {
+    opacity: 1;
+    translate: 0;
+  }
+}
+
+@media (max-width: 400px){
+
+  body {
+    font-size: 14px;
+  }
+
+  main {
+   width: calc(100% - 2rem);
+    padding: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+  h1 {
+    font-size: 24px;
+}
+
+
+
+}
+
+
