@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+body {
+    background-color: #0d192b;
+}
+p {
+    font-size: 15px;
+    color: #8bacda;
+    font-weight: 300;
+    padding-bottom: 16px;
+}
+
+#nft-card-container {
+    background-color: #14253d;
+    width: 300px;
+    height: 500px;
+    border-radius: 15px;
+    margin: 5rem auto;
+    padding: 5px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.nft-card-image {
+    width: 90%;
+    height: 260px;
+    margin: 1rem auto;
+    background: url(images/image-equilibrium.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+
+}
+
+.nft-text {
+    padding-left: 16px;
+}
+
+h2 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 16px;
+    transition: color .2s ease-in;
+    cursor: pointer;
+}
+
+h2:hover {
+    color: #00fff7;
+}
+
+.nft-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.eth-icon {
+    display: flex;
+    align-items: center;
+}
+
+.blue-text {
+    color: #00fff7;
+    font-weight: 400;
+    font-size: 15px;
+    padding-left: 7px;
+}
+
+.clock-icon {
+    display: flex;
+    align-items: center;
+    padding-right: 16px;
+}
+
+.light-text {
+    color: #8bacda;
+    font-size: 15px;
+    padding-left: 7px;
+}
+
+.line {
+    height: 1px;
+    width: 90%;
+    background-color: #8bacda;
+    margin: 16px auto;
+    opacity: .3;
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+    color: #8daec0;
+}
+
+.creator-avatar {
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.creator a {
+    color: white;
+    text-decoration: none;
+    transition: color .2s ease-in;
+    cursor: pointer;
+}
+
+.creator a:hover {
+    color: #00fff7;
+    transition: color .2s ease-in;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 255, 255, 0.7); /* Cyan overlay */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.view-icon {
+    width: 40px;
+    height: 40px;
+    opacity: 0.8;
+}
+
+.nft-card-image:hover .overlay {
+    opacity: 1;
+}
