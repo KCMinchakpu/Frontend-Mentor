@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5ede3;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.recipe-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin: 7rem auto;
+}
+
+.recipe-image {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.recipe-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.recipe-description {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+ul, ol {
+    margin-left: 20px;
+}
+
+.prep-time, .ingredients, .instructions, .nutrition {
+    margin-bottom: 20px;
+}
+
+strong {
+    color: #555;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+    .recipe-card {
+        padding: 15px;
+    }
+
+    .recipe-title {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .recipe-card {
+        padding: 10px;
+    }
+
+    .recipe-title {
+        font-size: 1.3em;
+    }
+
+    h2 {
+        font-size: 0.9em;
+    }
+
+    table td {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 320px) {
+    .recipe-card {
+        padding: 10px;
+        width: 300px;
+    }
+
+    .recipe-title {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 0.8em;
+    }
+
+    table td {
+        font-size: 0.6em;
+    }
+}
