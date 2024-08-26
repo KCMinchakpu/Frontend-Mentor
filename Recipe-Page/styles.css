@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: "Outfit", sans-serif;
     background-color: #f5ede3;
     color: #333;
     margin: 0;
@@ -18,12 +18,18 @@ body {
     min-height: 100vh;
 }
 
+p {
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    padding-bottom: 20px;
+}
+
 .recipe-card {
     background-color: #fff;
-    padding: 20px;
+    padding: 30px;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
+    max-width: 700px;
     width: 100%;
     margin: 7rem auto;
 }
@@ -37,6 +43,7 @@ body {
 .recipe-title {
     font-size: 2em;
     margin-bottom: 10px;
+    font-family: "Young Serif", serif;
 }
 
 .recipe-description {
@@ -45,22 +52,68 @@ body {
     margin-bottom: 20px;
 }
 
-h2 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    color: #333;
+.prep-time  {
+    background-color: #fff5fa;
+    padding: 30px;
+    border-radius: 10px;
 }
+
+.prep-time h2 {
+    color: #7b284f;
+    font-size: 1.5rem;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+}
+
+.prep-time ul li {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #5f574e;
+    font-weight: 400;
+}
+
+
+.instructions li {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #5f574e;
+    font-weight: 400;
+    
+    
+}
+
+.ingredients li {
+    color: #5f574e;
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 400;
+    font-family: "Outfit", sans-serif;
+
+}
+
 
 ul, ol {
     margin-left: 20px;
+    font-size: 16px;
+    color: #854632;
+    font-weight: 600;
 }
 
 .prep-time, .ingredients, .instructions, .nutrition {
     margin-bottom: 20px;
 }
 
+.ingredients h2, .instructions h2, .nutrition h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #854632;
+    font-family: "Young Serif", serif;
+    font-weight: 700;
+    
+}
+
 strong {
-    color: #555;
+    color: 	#302d2c;
 }
 
 table {
@@ -68,9 +121,18 @@ table {
     border-collapse: collapse;
 }
 
+.data {
+    color: #5f574e;
+    font-size: 18px;
+    font-weight:400;
+}
+
 td {
     padding: 5px 0;
     border-bottom: 1px solid #ddd;
+    color: #854632;
+    font-weight: 700;
+    font-size: 16px;
 }
 
 @media (max-width: 768px) {
