@@ -2,129 +2,95 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Outfit", sans-serif;
-
 }
 
 body {
-    font-family: "Outfit", sans-serif;
-    background-color: #f5ede3;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    background-color: #f3e6d8;
+
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Young Serif", serif;
 }
 
 p {
-    font-size: 16px;
     font-family: "Outfit", sans-serif;
-    padding-bottom: 20px;
+    color: #575351;
 }
 
 .recipe-card {
     background-color: #fff;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    max-width: 700px;
-    width: 100%;
-    margin: 7rem auto;
+    margin: 4rem auto;
+    width: 740px;
+    border-radius: 20px;
+    padding: 2.5rem;
 }
 
-.recipe-image {
-    width: 100%;
-    border-radius: 12px;
-    margin-bottom: 20px;
+.omelette-image {
+    width: 660px;
+    border-radius: 8px;
 }
 
 .recipe-title {
-    font-size: 2em;
-    margin-bottom: 10px;
-    font-family: "Young Serif", serif;
+    color: #2a2827;
+    margin: 16px auto;
 }
 
-.recipe-description {
-    font-size: 1em;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.prep-time  {
-    background-color: #fff5fa;
-    padding: 30px;
-    border-radius: 10px;
+.prep-time {
+    margin: 32px 0px;
+    background-color: #fff7fc;
+    border-radius: 8px;
+    padding: 1.5rem 0rem 1.5rem 3rem;
 }
 
 .prep-time h2 {
+    font-family: "Outfit", sans-serif;
     color: #7b284f;
-    font-size: 1.5rem;
+}
+
+li {
     font-family: "Outfit", sans-serif;
-    font-weight: 600;
+    padding-left: 16px;
+    margin: 16px 0px;
+    color: #575351;
 }
 
-.prep-time ul li {
-    font-size: 18px;
-    line-height: 1.8;
-    color: #5f574e;
-    font-weight: 400;
+li::marker {
+    color: #7b284f;
 }
 
-
-.instructions li {
-    font-size: 16px;
-    line-height: 1.8;
-    color: #5f574e;
-    font-weight: 400;
-    
-    
+.bold-text {
+    font-weight: bold;
 }
 
-.ingredients li {
-    color: #5f574e;
-    font-size: 18px;
-    line-height: 1.8;
-    font-weight: 400;
-    font-family: "Outfit", sans-serif;
-
-}
-
-
-ul, ol {
-    margin-left: 20px;
-    font-size: 16px;
+.brown-text {
     color: #854632;
-    font-weight: 600;
 }
 
-.prep-time, .ingredients, .instructions, .nutrition {
-    margin-bottom: 20px;
-}
-
-.ingredients h2, .instructions h2, .nutrition h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
+.brown-list li::marker {
     color: #854632;
-    font-family: "Young Serif", serif;
-    font-weight: 700;
-    
+    font-weight: bold;
 }
 
-strong {
-    color: 	#302d2c;
+.horizontal-line {
+    background: #e2e2e2;
+    height: 1px;
+    margin: 32px 0px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
+    margin: 32px 0px;
 }
 
 .data {
-    color: #5f574e;
-    font-size: 18px;
+    color: #575351;
+    font-size: 16px;
     font-weight:400;
+    font-family: "Outfit", sans-serif;
 }
 
 td {
@@ -133,6 +99,7 @@ td {
     color: #854632;
     font-weight: 700;
     font-size: 16px;
+    font-family: "Outfit", sans-serif;
 }
 
 @media (max-width: 768px) {
@@ -151,15 +118,25 @@ td {
 
 @media (max-width: 480px) {
     .recipe-card {
-        padding: 10px;
+        padding: 20px;
+        width: 450px;
+    }
+
+    .omelette-image {
+        width: 410px;
     }
 
     .recipe-title {
         font-size: 1.3em;
     }
 
-    h2 {
-        font-size: 0.9em;
+    .prep-time h2 {
+        font-size: 1.5rem;
+    }
+
+    li {
+        margin-left: 25px;
+        
     }
 
     table td {
@@ -169,19 +146,30 @@ td {
 
 @media (max-width: 320px) {
     .recipe-card {
-        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
         width: 300px;
     }
-
+    .omelette-image {
+        width: 260px;
+        border-radius: 0px;
+        padding-top: 10px;
+    }
     .recipe-title {
-        font-size: 1.2em;
+        font-size: 1.2rem;
     }
 
-    h2 {
-        font-size: 0.8em;
+    .prep-time h2 {
+        font-size: 1rem;
+        
+    }
+
+    li {
+        margin-left: 15px;
+        
     }
 
     table td {
-        font-size: 0.6em;
+        font-size: 0.9rem;
     }
 }
