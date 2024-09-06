@@ -1,6 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@400,700;&display=swap');
+
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
+:root {
+    --pink: #ff52bf;
+    --palecyan: #ebfbff;
+    --darkcyan: #00252e;
+    --grayish-blue: #808d99;
+  }
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+}
+
+h1, h2, h3 {
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.btn-hero, .btn-cta-card {
+    padding: 10px 40px;
+    background-color: var(--pink);
+    color: #fff;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 15px;
+    box-shadow: -2px 2px 20px 0px #0000001f;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+#header {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    background-image: url(images/bg-hero-mobile.svg);
+    background-position: center top;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-color: var(--palecyan);
+}
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+}
+
+#header .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#header .container .nav {
+    position: absolute;
+    top: 0;
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#header .logo {
+    width: 150px;
+}
+
+#header .btn-header {
+  background-color: #fff;
+  color: black;
+  padding: 10px 35px;
+  margin-left: 10px;
+  box-shadow: #0000001f;
+  font-size: 12px;
+  border-radius: 50px;
+  font-weight: 700;
+
+   
+}
+
+.container .hero {
+    width: 100%;
+    height: 100%;
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-info h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1.3rem;
+}
+
+.hero-info p {
+    font-size: 1.23rem;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.btn-hero {
+    padding: 15px 50px;
+    font-size: 1rem;
+}
+
+.hero-image img {
+    max-width: 700px;
+    margin-top: 40px;
+    object-fit: contain;
+    align-items: center;
+}
+
+#features-card {
+    padding: 100px 0;
+}
+
+#features-card .container .card-item {
+    padding: 50px 30px;
+    box-shadow: -2px 2px 20px 0px #00000013;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.card-data {
+    margin-top: 30px;
+}
+
+.card-data h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.card-data p {
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--grayish-blue);
+}
+
+#cta-card {
+    display: flex;
+    padding: 50px 0;
+    margin-bottom: -100px;
+}
+
+
+
+#cta-card .container .card {
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    box-shadow: -2px 2px 20px 0px #00000013;
+    background-color: #fff;
+    border-radius: 10px;
+
+}
+
+#cta-card .container .card h2 {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+#footer {
+    background-color: var(--darkcyan);
+    color: #fff;
+    padding: 100px 0 30px 0;
+}
+
+#footer .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.footer-col-1 {
+    margin-top: 30px;
+}
+
+.footer-col-1 ul {
+    list-style: none;
+}
+
+.footer-col-1 ul li {
+    margin-top: 25px;
+}
+
+.footer-logo {
+    width: 200px;
+}
+
+.contact {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+.contact img {
+    width: 15px;
+    margin-top: 10px;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin-left: 20px;
+    flex: 1;
+}
+
+.footer-col-2, .footer-col-3 {
+    ul {
+        list-style: none;
+        li {
+            margin-top: 18px;
+            a {
+                text-decoration: none;
+                font-size: 1.2rem;
+                color: #fff;
+            }
+        }
+    }
+
+}
+
+.footer-col-4 {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.footer-col-4 ul li {
+    list-style: none;
+}
+
+.fab {
+    color: #fff;
+}
+
+.footer-copyright {
+    margin-top: 20px;
+    text-align: center;
+    font-size: .9rem;
+}
+
+@media only screen and (min-width: 48rem) {
+
+    #features-card .container .card-item {
+       flex-direction: row;
+       padding: 50px 100px;
+       align-items: center;
+       justify-content: center;
+       text-align: left;
+       &:nth-child(even){
+        flex-direction: row-reverse;
+       }
+      
+    }
+
+    .card-data {
+        margin-left: 50px;
+    }
+
+    .card-item .card-data {
+        margin-right: 50px;
+    }
+
+    .card-data h3 {
+        font-size: 1.7rem;
+    }
+
+    .card-data p {
+        font-size: 1rem;
+    }
+
+    #cta-card {
+        margin-bottom: -100px;
+    }
+
+    #cta-card .container .card {
+        padding: 50px;
+    }
+
+    #cta-card .container .card h2 {
+        font-size: 2rem;
+        margin-bottom: 50px;
+    }
+    .card a {
+        display: inline-block;
+        padding: 20px 60px;
+        font-size: 1.2rem;
+    }
+
+    #footer .container .footer-data {
+        flex-direction: row;
+    }
+    .footer-col-1,
+    .footer-col-2,
+    .footer-col-3,
+    .footer-col-4 {
+        flex: 1;
+        margin-left: 50px;
+    }
+
+    .footer-col-1 {
+        flex: 2.5;
+        margin: 0;
+    }
+
+    .footer-col-2,
+    .footer-col-3,
+    .footer-col-4 {
+        margin-top: 70px;
+    }
+
+    .footer-copyright {
+        text-align: right;
+    }
+}
+
+@media only screen and (min-width: 64rem) {
+    
+    #header {
+        height: 100vh;
+        background-image: url(images/bg-hero-desktop.svg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    
+    #header .container .hero {
+        flex-direction: row;
+        text-align: left;
+        
+    }
+
+    .container .hero {
+        margin-top: 0px;
+    }
+
+    .hero-image {
+        flex: 3;
+    }
+
+    .hero-info {
+        flex: 2;
+        margin-right: 50px;
+    }
+
+    .hero-info h1 {
+        font-size: 2.2rem;
+    }
+
+    .fab {
+        font-size: 1.5rem;
+    }
+
+    .contact p {
+        font-size: 1rem;
+    }
+    
+}
