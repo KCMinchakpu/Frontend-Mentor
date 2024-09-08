@@ -1,0 +1,253 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+p {
+    font-size: 18px;
+}
+
+body {
+    background-color: var(--Paleblue);
+    
+    
+}
+
+:root {
+    --Lightred: #ff5757;
+    --Orangeyyellow: #ffb01f;
+    --Greenteal:#00bd91;
+    --Cobaltblue: #1125d4;
+    --Lightslateblue:#7857ff; 
+    --Lightroyalblue :#2e2be9; 
+    --Violetblue:#4e21ca; 
+    --Persianblue:#2421ca;
+    --White:#ffffff;
+    --Paleblue:#ebf1ff; 
+    --Lightlavender:#c8c7ff;
+    --Darkgrayblue:#303b5a;
+}
+
+ 
+#main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 736px;
+    height: 512px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.result-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(46,43,233);
+    background: linear-gradient(0deg, rgba(46,43,233,1) 15%, rgba(120,87,255,1) 91%);
+    width: 40%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 8px -3px rgba(0,0,0,0.11);
+    -webkit-box-shadow: 10px 10px 8px -3px rgba(0,0,0,0.11);
+    -moz-box-shadow: 10px 10px 8px -3px rgba(0,0,0,0.11);
+    margin-right: -10px;
+    z-index: 1;
+}
+
+.result-box h2 {
+    color: var(--Lightlavender);
+    font-weight: 500;
+    padding: 2rem;
+}
+
+.score-circle {
+    background: rgb(36,33,202);
+    background: linear-gradient(0deg, rgba(50, 47, 194, 0.633) 0%, rgba(78,33,202,1) 100%);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.score {
+    color: var(--White);
+    font-size: 60px;
+    font-weight: 800;
+    margin-top: 50px;
+}
+
+.total-score {
+    color: var(--Lightlavender);
+    font-size: 18px;
+    font-weight: 500;
+    opacity: .3;
+
+}
+
+.result-box h3 {
+    color: var(--White);
+    font-size: 24px;
+    font-weight: 500;
+    margin: 1rem 0rem;
+}
+
+.result-box p {
+    color: var(--Lightlavender);
+    opacity: .9;
+    text-align: center;
+    width: 80%;
+    line-height: 1.5;
+    padding-bottom: 40px;
+}
+
+
+.summary {
+    width: 50%;
+    background-color: var(--White);
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 10px 10px 8px -3px rgba(0,0,0,0.11);
+    -webkit-box-shadow: 10px 10px 8px -3px rgba(0,0,0,0.11);
+    -moz-box-shadow: 10px 10px 8px -3px rgba(0,0,0,0.11);
+}
+
+.summary h3 {
+    padding-left: 2.5rem;
+    padding-top: 1.5rem;
+    
+}
+
+.stats-container {
+    padding-left: 15px;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 2rem;
+    width: 280px;
+    height: 50px;
+    padding: 0 1rem;
+    border-radius: 8px;
+}
+
+.test {
+    display: flex;
+    align-items: center;
+}
+
+.test p {
+    padding-left: 9px;
+}
+
+.light-text {
+    opacity: .3;
+}
+
+.reaction {
+    color: var(--Lightred);
+}
+
+.memory {
+    color: var(--Orangeyyellow);
+}
+
+.verbal {
+    color: var(--Greenteal);
+}
+.visual {
+    color: var(--Cobaltblue);
+}
+
+.scores {
+    color: var(--Darkgrayblue);
+    font-weight: 800;
+}
+
+#reaction {
+    background-color: #fff6f5;
+}
+
+#memory {
+    background-color: #fffbf2;
+}
+
+#verbal {
+    background-color: #f3fafa;
+}
+
+#visual {
+    background-color: #f3f3fd;
+}
+
+.button-container {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+ #continue-btn {
+    padding: 10px 30px;
+    background-color: var(--Darkgrayblue);
+    color: var(--White);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 280px;
+    height: 46px;
+    margin: 1rem 0rem;
+    transition: all .2s ease-in;
+    
+}
+
+#continue-btn:hover {
+    background: rgb(46,43,233);
+    background: linear-gradient(0deg, rgba(46,43,233,1) 15%, rgba(120,87,255,1) 91%);
+}
+
+
+/*
+media queries
+*/
+
+@media screen and (max-width: 650px) {
+    #main-container {
+        flex-direction: column;
+        width: 90%;
+        height: 100%;
+    }
+
+    .result-box {
+        width: 100%;
+        border-radius: 0px 0px 20px 20px;
+        margin-right: 0px;
+        z-index: 1;
+        
+    }
+
+    .stat {
+        display: flex;
+        align-items: center;
+        padding-left: 5px;
+        margin: 10px 0;
+    }
+
+    .summary {
+        width: 100%;
+        border-radius: 0px;
+        
+        
+    }
+
+    .summary h3 {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    
+  }
