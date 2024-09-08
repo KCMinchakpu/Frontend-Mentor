@@ -102,7 +102,7 @@ body {
     color: var(--Lightlavender);
     opacity: .9;
     text-align: center;
-    width: 80%;
+    width: 85%;
     line-height: 1.5;
     padding-bottom: 40px;
 }
@@ -241,8 +241,6 @@ media queries
     .summary {
         width: 100%;
         border-radius: 0px;
-        
-        
     }
 
     .summary h3 {
