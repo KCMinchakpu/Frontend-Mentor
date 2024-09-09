@@ -15,6 +15,11 @@
 body {
     background-color: var(--Yellow);
     font-family: "Figtree", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
     
 }
 a {
