@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background-color: var(--Cream);
+}
+p {
+    font-size: 18px;
+}
+
+:root {
+    --Softred:#ec775f;
+    --Cyan:	#76b5bc; 
+    --Darkbrown:#382314;
+    --Mediumbrown:#93867b;
+    --Cream:#f8e9dd;
+    --Verypaleorange:#fffaf5; 
+}
